@@ -1,0 +1,428 @@
+@font-face {
+    font-family: iranYekanLight;
+    src: url('../fonts/iranYekan/IRANYekanLightFaNum.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: iranYekanRegular;
+    src: url('../fonts/iranYekan/IRANYekanRegularFaNum.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: iranYekanMedium;
+    src: url('../fonts/iranYekan/IRANYekanMediumFaNum.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: iranYekanBold;
+    src: url('../fonts/iranYekan/IRANYekanBlackFaNum.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* Remove default padding */
+
+ul,
+ol {
+    padding: 0;
+}
+
+
+/* Remove default margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+
+/* Set core body defaults */
+
+body {
+    font-family: iranYekanRegular;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    direction: rtl;
+    position: relative;
+    background-color: #FCFCFC;
+}
+
+.body-overflow {
+    overflow: hidden;
+}
+
+
+/* Remove list styles on ul, ol elements with a class attribute */
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+
+/* A elements that don't have a class get default styles */
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+
+/* Make images easier to work with */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #dbb366;
+    transition: .4s all;
+}
+
+
+/* Natural flow and rhythm in articles by default */
+
+article>*+* {
+    margin-top: 1em;
+}
+
+
+/* Inherit fonts for inputs and buttons */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+input:focus-visible {
+    outline: 0;
+    box-shadow: none;
+}
+
+h1,
+.h1 {
+    font-size: 2.2rem;
+}
+
+h2,
+.h2 {
+    font-size: 2rem;
+}
+
+h3,
+.h3 {
+    font-size: 1.8rem;
+}
+
+h4,
+.h4 {
+    font-size: 1.6rem;
+}
+
+h5,
+.h5 {
+    font-size: 1.4rem;
+}
+
+h6,
+.h6 {
+    font-size: 1.2rem;
+}
+
+.free-resources-row [class^="col-"] {
+    padding: 0 5px;
+}
+
+
+/***** cusotm btn style *******/
+
+.btn-custom {
+    font-family: iranYekanMedium;
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    background-repeat: no-repeat;
+    padding: 8px 30px;
+    font-size: .85rem;
+    line-height: 1.5;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-border {
+    background-color: transparent;
+    color: #fff;
+    transition: all .4s;
+    border: 1px solid #fff;
+    padding: 6px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-border:hover {
+    color: #fff;
+    -webkit-box-shadow: -3px 4px 5px -1px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: -3px 4px 5px -1px rgba(0, 0, 0, 0.28);
+    box-shadow: -3px 4px 5px -1px rgba(0, 0, 0, 0.28);
+}
+
+.btn-brown {
+    transition: all .4s;
+    background-color: #dbb366;
+    border: 1px solid #dbb366;
+    color: #fff;
+    border-radius: 8px;
+    padding: 18px 15px;
+}
+
+.btn-brown:hover {
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.22);
+}
+
+.btn-default-c {
+    padding: 18px 20px;
+    transition: all .4s;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    -webkit-box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.22);
+}
+
+.btn-default-c:hover {
+    box-shadow: none;
+}
+
+.icon-btn {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    padding: 3px;
+    margin: 0 10px;
+}
+
+.icon-btn img {
+    max-width: 100%;
+}
+
+#main-menu {
+    z-index: 99999;
+}
+
+.header-section-wrapper {
+    width: 100%;
+    padding-bottom: 1em;
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.head-section-bg {
+    position: absolute;
+    z-index: 0;
+    top: -50%;
+    left: 0;
+    width: 45%;
+}
+
+#list-content-main .nav-item .nav-link {
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+}
+
+#list-content-main .nav-item.active .nav-link {
+    font-weight: 400;
+    color: #dbb366;
+}
+
+.top-header-h {
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: iranYekanMedium;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.top-header-h span {
+    color: #dbb366;
+    display: inline-block;
+    margin-top: 1em;
+    font-size: 2rem;
+}
+
+.top-header-content {
+    color: #686868;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.why-pain-section {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 3em 0;
+    margin-top: 4em;
+}
+
+.headin-section-box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.8rem;
+    font-family: iranYekanBold;
+}
+
+.headin-section-box-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    padding: 6px;
+    border-radius: 8px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.section-content {
+    padding: 3em 0;
+}
+
+.buy-property-section {
+    width: 100%;
+    position: relative;
+    padding: 2em;
+}
+
+.section-content p {
+    font-size: #686868;
+    font-size: 1rem;
+    padding: .5em;
+}
+
+.emigration-list {
+    width: 100%;
+    position: relative;
+    padding: 10px;
+}
+
+.emigration-list-li {
+    font-size: 1rem;
+    padding: 8px;
+    position: relative;
+}
+
+.emigration-list-li::before {
+    content: "\2022";
+    color: #dbb366;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 25px;
+    position: absolute;
+    right: -10px;
+    top: 5px;
+}
+
+@media screen and (max-width:768px) {
+    .head-section-bg {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .head-section-bg img {
+        transform: scale(1.5);
+    }
+    .top-header-h {
+        color: #fff;
+        text-align: center;
+        margin-bottom: .5em;
+        margin-top: 2em;
+    }
+    .header-section-wrapper {
+        padding-bottom: 2em;
+    }
+    .top-header-content {
+        color: #fff;
+    }
+    .call-to-action-head {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:450px) {}
+
+@media screen and (max-width:400px) {}
+
+@media screen and (max-width:350px) {}
+
+@media only screen and (max-width:520px) {}
+
+
+/* Large devices (tablet, 769px and up) */
+
+@media only screen and (min-width: 769px) {}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 500px) and (max-width: 768px) {}
+
+@media screen and (min-width: 992px) and (max-width: 1220px) {}
+
+@media screen and (min-width: 767px) and (max-width: 992px) {}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}
+
+@media only screen and (min-width: 1050px) {}
+
+@media only screen and (min-width: 1400px) {}
